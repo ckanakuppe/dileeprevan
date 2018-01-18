@@ -1,12 +1,74 @@
 /* styles.css */
 
+/*Global settings */
 html,
 body {
     height: 100%;
 }
 
-/* cover */
+.container{
+  width:auto;
+  margin:auto;
+  overflow:hidden;
+}
 
+/*Header Settings*/
+header{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#mainLogo{
+  float: left;
+}
+
+.mainLogo{
+    width: 300px;
+}
+
+header nav{
+  float: right;
+  margin: auto;
+  font-style: normal;
+}
+
+/*Carousel settings*/
+body #carousel{
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.carousel-item img {
+    margin: 0 auto;
+}
+
+/*footer settings*/
+footer #copyrightText{
+    float: left;
+    text-align: left;
+    font-style: italic;
+    font-size: 10px;
+    margin: auto;
+}
+
+footer ul{
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li{
+  /*float: inherit;*/
+  display: inline;
+  padding: 0 5px 0 5px;
+}
+.followMeLogoImg{
+  height: 20px;
+  width: 20px;
+}
+
+/* cover */
 #cover {
     background: #222 url('../img/DSC_2660.jpg') center center no-repeat;
     background-size: cover;
@@ -15,16 +77,6 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-}
-.navbar-brand{
-    font-family: cursive;
-}
-.mainLogo{
-    width: 300px;
-}
-.carousel-item img {
-    height: 100% !important;
-    width: 100% !important;
 }
 /*
 #cover-caption{
