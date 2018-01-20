@@ -32,6 +32,11 @@ header nav{
   font-style: normal;
 }
 
+.dropdown-item{
+  z-index: 999;
+}
+
+
 /*settings related to Index page*/
 /*Carousel settings*/
 body #carousel{
