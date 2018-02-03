@@ -65,6 +65,76 @@ body #carousel{
   text-align: justify;
 }
 
+/* Settings related to Gallery page */
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.galThumb {
+    background-color: white;
+    padding: 0 20px 10px 20px;
+    /* height: 200px; */
+    /* object-fit:scale-down; */
+}
+.galThumb img{
+    height:200px;
+    width: 300px;
+    /* display: inline-block; */
+}
+.galThumb:hover img{
+  opacity: 0.5;
+  padding:20px;
+  align-items: center;
+}
+
+.galLabel{
+  text-align: center;
+}
+.galLabel a{
+  color: black;
+  font-style: oblique;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/*Settings related to image galleryPages*/
+.imgGallery{
+
+}
+
+
+
+
+
 /*settings related to blog page*/
 #blog_1_01_18_2018 h1{
   font-size: 18px;
